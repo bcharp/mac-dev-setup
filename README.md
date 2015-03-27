@@ -9,8 +9,9 @@ A script and some config files
 Fork it if you like, and adapt it to your need
 
 # How
-Clone the repo to your home then just : 
-
+Clone the repo then just : 
+    
+    > cd mac-dev-setup
     > chmod +x ./setup.sh
     > ./setup.sh
 
