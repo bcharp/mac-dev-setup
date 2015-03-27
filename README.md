@@ -11,6 +11,7 @@ Fork it if you like, and adapt it to your need
 # How
 Clone the repo to your home then just : 
 
-    ./setup.sh
+    > chmod +x ./setup.sh
+    > ./setup.sh
 
 
