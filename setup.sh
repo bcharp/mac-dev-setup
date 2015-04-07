@@ -33,6 +33,8 @@ brew cask install rescuetime
 brew cask install charles
 # MacDown : http://macdown.uranusjr.com/download/latest/
 brew cask install macdown
+# Keepass
+brew cask install keepassx
 
 # Manual install
 # CopyClip : https://itunes.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12
