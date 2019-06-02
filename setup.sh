@@ -46,3 +46,9 @@ cp .zshrc ~/
 
 git config --global user.email "boris.charpentier@gmail.com"
 git config --global user.name "Boris Charpentier"
+
+
+# Clean up
+
+rm postman.zip
+rm atom.zip
