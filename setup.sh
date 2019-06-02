@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# From scratch to my basic setup
-
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -9,32 +7,33 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ln -s ./.vim/.vimrc ~/.vimrc
 
 # Tools
-brew install git
+
 brew install ack
-brew install node
-brew install openssl
-brew install task
+brew install nvm
 
-# More tools
-npm install -g bower
-npm install -g grunt-cli
-
-# For apps
-brew install caskroom/cask/brew-cask
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
 
 # Apps
-# Chrome : https://www.google.fr/chrome/browser/desktop/#
-brew cask install google-chrome
-# Sublime Text : http://www.sublimetext.com/
-brew cask install sublime-text
-# Rescue time : https://www.rescuetime.com/
-brew cask install rescuetime
-# Charles : http://www.charlesproxy.com/
-brew cask install charles
-# MacDown : http://macdown.uranusjr.com/download/latest/
-brew cask install macdown
-# Keepass
-brew cask install keepassx
 
-# Manual install
-# CopyClip : https://itunes.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12
+## Atom
+
+curl -o atom.zip -L https://atom.io/download/mac
+unzip atom.zip
+mv Atom.app ~/Applications/
+
+## Docker
+
+# Go to https://www.docker.com/get-started
+
+## Oh my Zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+### Install powerline9k
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.powerlevel9k
+
+### Copy Zshrc
+
+cp .zshrc ~/
